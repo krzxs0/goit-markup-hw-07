@@ -1,4 +1,13 @@
 @media screen and (min-width: 1200px) {
+  .box-text-hero {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  /* -------------------------------------- */
   .box-wawd-section {
     visibility: visible;
   }
@@ -7,8 +16,7 @@
     flex-direction: row;
   }
   .futures-text {
-    width: 264px;
-    height: auto;
+    max-width: 264px;
   }
   .box-futures-text {
     display: flex;
@@ -20,5 +28,53 @@
   }
   .future-svg {
     visibility: visible;
+  }
+  .futures-name {
+    display: inline;
+    width: 264px;
+    height: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+  }
+  /* ------------------------------------------ */
+  .box-our-team-list {
+    display: flex;
+    flex-direction: row;
+  }
+  /* ----------------------------------------- */
+  .customers-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .item-list-customers {
+  }
+  /* --------------------------------------------- */
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  /*  */
+
+  .form-footer {
+    display: block;
+
+    margin-left: auto;
+  }
+  .div-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-div-link {
+    display: block;
+    margin-left: auto;
+  }
+  .btt-footer {
+    margin-bottom: 16px;
   }
 }
