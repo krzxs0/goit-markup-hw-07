@@ -1,0 +1,24 @@
+@media screen and (min-width: 1200px) {
+  .box-wawd-section {
+    visibility: visible;
+  }
+  .box-futures-text {
+    display: flex;
+    flex-direction: row;
+  }
+  .futures-text {
+    width: 264px;
+    height: auto;
+  }
+  .box-futures-text {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  .list-futures-svg {
+    visibility: visible;
+  }
+  .future-svg {
+    visibility: visible;
+  }
+}

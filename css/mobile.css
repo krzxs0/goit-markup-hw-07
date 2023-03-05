@@ -1,0 +1,36 @@
+@media screen and (min-width: 480px) {
+  body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .container {
+  }
+  .box-wawd-section {
+    visibility: hidden;
+  }
+  .section-futures-web {
+  }
+  .futures-text {
+    width: 396px;
+    height: auto;
+  }
+
+  .list-future-svg {
+  }
+  .box-futures-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-futures-item {
+  }
+  .list-futures-svg {
+    visibility: hidden;
+  }
+  .future-svg {
+    visibility: hidden;
+  }
+  .futures-name {
+    height: 40px;
+    width: 396px;
+  }
+}
