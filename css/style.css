@@ -71,7 +71,8 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-.header-container {
+
+.header-navigation {
   display: flex;
   justify-content: space-between;
 }

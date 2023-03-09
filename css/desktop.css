@@ -19,9 +19,27 @@
     border-radius: 2px;
   }
   /* -------------------------------------- */
+  .header-mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .header-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
   .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .header-list {
     display: flex;
@@ -44,6 +62,9 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+  }
+  .button-open-menu {
+    display: none;
   }
   .links {
     font-family: 'Roboto';

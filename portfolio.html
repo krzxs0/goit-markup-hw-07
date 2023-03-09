@@ -31,9 +31,14 @@
         <nav class="header-navigation">
           <a
             href="./index.html"
-            class="list-style-none studio-logo-style logo text-decoration links"
+            class="list-style-none studio-logo-style logo text-decoration menu-desktop"
             ><span class="web-logo-style">Web</span>Studio</a
           >
+          <button class="button-open-menu" data-menu-open>
+            <svg class="svg-header-menu" width="24px" height="24px">
+              <use href="./images/checkbox-modal.svg#icon-hamburger"></use>
+            </svg>
+          </button>
           <ul class="list-style-none header-list">
             <li class="current">
               <a
@@ -78,16 +83,14 @@
           </ul>
         </address>
       </div>
-      <button
-        type="button"
-        class="button-hero-h button-text-after-title cursor-pointer btt-menu-mobile"
-        data-menu-open
-      >
-        0
-      </button>
-      <div class="backdrop is-hidden" data-menu>
+
+      <div class="backdrop is-hidden mobile-menu" data-menu>
         <div class="mobile-menu">
-          <button type="button" class="menu-close" data-menu-close>X</button>
+          <button type="button" class="menu-close" data-menu-close>
+            <svg width="24px" height="24px">
+              <use href="./images/checkbox-modal.svg#icon-close"></use>
+            </svg>
+          </button>
           <ul class="list-style-none mob-menu">
             <li class="current mob-menu-item">
               <a
@@ -114,20 +117,20 @@
           <ul class="list-style-none mob-menu-contacs-list">
             <li class="mob-menu-add">
               <a
-                href="mailto:info@devstudio.com"
-                class="contacs-web-studio list-style-none text-decoration box-header-contacs header-mail links"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="mob-menu-add">
-              <a
                 href="tel:+110001111111"
                 class="contacs-web-studio list-style-none text-decoration box-header-contacs header-tel links"
                 >+11 (000) 111-11-11</a
               >
             </li>
+            <li class="mob-menu-add">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacs-web-studio list-style-none text-decoration box-header-contacs header-mail links"
+                >info@devstudio.com</a
+              >
+            </li>
           </ul>
-          <ul class="svg-our-team list-style-none">
+          <ul class="svg-our-team-menu list-style-none">
             <li class="svg-our-team-item">
               <a href="" class="our-team-link">
                 <svg width="16px" height="16px" class="our-team-svg-item">

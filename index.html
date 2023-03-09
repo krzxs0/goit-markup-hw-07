@@ -35,7 +35,7 @@
             ><span class="web-logo-style">Web</span>Studio</a
           >
           <button class="button-open-menu" data-menu-open>
-            <svg class="svg-header-menu" width="24" height="24">
+            <svg class="svg-header-menu" width="24px" height="24px">
               <use href="./images/checkbox-modal.svg#icon-hamburger"></use>
             </svg>
           </button>
@@ -86,19 +86,23 @@
 
       <div class="backdrop is-hidden mobile-menu" data-menu>
         <div class="mobile-menu">
-          <button type="button" class="menu-close" data-menu-close>X</button>
+          <button type="button" class="menu-close" data-menu-close>
+            <svg width="24px" height="24px">
+              <use href="./images/checkbox-modal.svg#icon-close"></use>
+            </svg>
+          </button>
           <ul class="list-style-none mob-menu">
             <li class="current mob-menu-item">
               <a
                 href="./index.html"
-                class="list-style-none text-decoration box-header-text links studio-link nav-links tabs-web-studio"
+                class="list-style-none text-decoration box-header-text links studio-link nav-links tabs-web-studio current"
                 >Studio</a
               >
             </li>
             <li class="box-header-text mob-menu-item">
               <a
                 href="./portfolio.html"
-                class="list-style-none text-decoration box-header-text links portfolio-link nav-links tabs-web-studio current"
+                class="list-style-none text-decoration box-header-text links portfolio-link nav-links tabs-web-studio"
                 >Portfolio</a
               >
             </li>
@@ -126,7 +130,7 @@
               >
             </li>
           </ul>
-          <ul class="svg-our-team list-style-none">
+          <ul class="svg-our-team-menu list-style-none">
             <li class="svg-our-team-item">
               <a href="" class="our-team-link">
                 <svg width="16px" height="16px" class="our-team-svg-item">

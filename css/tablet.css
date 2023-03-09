@@ -6,6 +6,22 @@
   }
 
   /* ------------------------- */
+  .header-mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+  .header-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -26,6 +42,27 @@
   }
   .btt-menu-mobile {
     display: none;
+  }
+  .button-open-menu {
+    display: none;
+  }
+  .studio-logo-style {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .links {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
   }
   .tabs-web-studio.current::after {
     display: block;
