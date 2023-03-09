@@ -31,9 +31,14 @@
         <nav class="header-navigation">
           <a
             href="./index.html"
-            class="list-style-none studio-logo-style logo text-decoration links"
+            class="list-style-none studio-logo-style logo text-decoration menu-desktop"
             ><span class="web-logo-style">Web</span>Studio</a
           >
+          <button class="button-open-menu" data-menu-open>
+            <svg class="svg-header-menu" width="24" height="24">
+              <use href="./images/checkbox-modal.svg#icon-hamburger"></use>
+            </svg>
+          </button>
           <ul class="list-style-none header-list">
             <li class="current">
               <a
@@ -77,6 +82,82 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <div class="backdrop is-hidden mobile-menu" data-menu>
+        <div class="mobile-menu">
+          <button type="button" class="menu-close" data-menu-close>X</button>
+          <ul class="list-style-none mob-menu">
+            <li class="current mob-menu-item">
+              <a
+                href="./index.html"
+                class="list-style-none text-decoration box-header-text links studio-link nav-links tabs-web-studio"
+                >Studio</a
+              >
+            </li>
+            <li class="box-header-text mob-menu-item">
+              <a
+                href="./portfolio.html"
+                class="list-style-none text-decoration box-header-text links portfolio-link nav-links tabs-web-studio current"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a
+                href=""
+                class="list-style-none text-decoration box-header-text links nav-links tabs-web-studio"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <ul class="list-style-none mob-menu-contacs-list">
+            <li class="mob-menu-add">
+              <a
+                href="tel:+110001111111"
+                class="contacs-web-studio list-style-none text-decoration box-header-contacs header-tel links"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-menu-add">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacs-web-studio list-style-none text-decoration box-header-contacs header-mail links"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="svg-our-team list-style-none">
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="16px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="13px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="16px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="16px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -177,8 +258,9 @@
           </div>
         </div>
       </section>
+
       <section class="section-futures-web">
-        <div class="futures-text container">
+        <div class="container">
           <h2 class="visually-hidden">futures</h2>
           <ul
             class="list-style-none list-future-svg list-style-none box-futures-text"
@@ -591,5 +673,13 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/gulpfile.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +20,10 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body class="body-background">
     <header class="header">
@@ -27,21 +31,21 @@
         <nav class="header-navigation">
           <a
             href="./index.html"
-            class="list-style-none studio-logo-style logo text-decoration links nav-links"
+            class="list-style-none studio-logo-style logo text-decoration links"
             ><span class="web-logo-style">Web</span>Studio</a
           >
           <ul class="list-style-none header-list">
-            <li class="">
+            <li class="current">
               <a
                 href="./index.html"
                 class="list-style-none text-decoration box-header-text links studio-link nav-links tabs-web-studio"
                 >Studio</a
               >
             </li>
-            <li class="box-header-text current">
+            <li class="box-header-text">
               <a
                 href="./portfolio.html"
-                class="list-style-none text-decoration box-header-text links portfolio-link nav-links current tabs-web-studio"
+                class="list-style-none text-decoration box-header-text links portfolio-link nav-links tabs-web-studio current"
                 >Portfolio</a
               >
             </li>
@@ -74,13 +78,95 @@
           </ul>
         </address>
       </div>
+      <button
+        type="button"
+        class="button-hero-h button-text-after-title cursor-pointer btt-menu-mobile"
+        data-menu-open
+      >
+        0
+      </button>
+      <div class="backdrop is-hidden" data-menu>
+        <div class="mobile-menu">
+          <button type="button" class="menu-close" data-menu-close>X</button>
+          <ul class="list-style-none mob-menu">
+            <li class="current mob-menu-item">
+              <a
+                href="./index.html"
+                class="list-style-none text-decoration box-header-text links studio-link nav-links tabs-web-studio"
+                >Studio</a
+              >
+            </li>
+            <li class="box-header-text mob-menu-item">
+              <a
+                href="./portfolio.html"
+                class="list-style-none text-decoration box-header-text links portfolio-link nav-links tabs-web-studio current"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a
+                href=""
+                class="list-style-none text-decoration box-header-text links nav-links tabs-web-studio"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <ul class="list-style-none mob-menu-contacs-list">
+            <li class="mob-menu-add">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacs-web-studio list-style-none text-decoration box-header-contacs header-mail links"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-menu-add">
+              <a
+                href="tel:+110001111111"
+                class="contacs-web-studio list-style-none text-decoration box-header-contacs header-tel links"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <ul class="svg-our-team list-style-none">
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="16px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="13px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="16px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="svg-our-team-item">
+              <a href="" class="our-team-link">
+                <svg width="16px" height="16px" class="our-team-svg-item">
+                  <use href="./images/sprite-our-team.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main class="main">
       <section class="main-section-portfolio">
         <div class="container">
           <h1 class="visually-hidden">portfolio</h1>
           <ul class="list-style-none box-list-portfolio-btt">
-            <li>
+            <li class="item-portfolio-btt">
               <button
                 type="button"
                 class="buttons-main buttons-text cursor-pointer"
@@ -88,7 +174,7 @@
                 All
               </button>
             </li>
-            <li>
+            <li class="item-portfolio-btt">
               <button
                 type="button"
                 class="buttons-main buttons-text cursor-pointer"
@@ -96,7 +182,7 @@
                 Web Site
               </button>
             </li>
-            <li>
+            <li class="item-portfolio-btt">
               <button
                 type="button"
                 class="buttons-main buttons-text cursor-pointer"
@@ -104,7 +190,7 @@
                 App
               </button>
             </li>
-            <li>
+            <li class="item-portfolio-btt">
               <button
                 type="button"
                 class="buttons-main buttons-text cursor-pointer"
@@ -112,7 +198,7 @@
                 Design
               </button>
             </li>
-            <li>
+            <li class="item-portfolio-btt">
               <button
                 type="button"
                 class="buttons-main buttons-text cursor-pointer"
@@ -436,34 +522,27 @@
           name="signup_form"
           autocomplete="on"
           novalidate
-          class="form-footer container"
+          class="form-footer"
         >
-          <div class="div-footer-form">
-            <p class="span-text-modal-footer">Subscribe</p>
-            <div class="div-footer">
-              <div class="email-footer">
-                <label for="" class="lable-email-footer">
-                  <input
-                    type="email"
-                    name="email"
-                    class="footer-input-email"
-                    placeholder="E-mail"
-                  />
-                </label>
-              </div>
+          <p class="span-text-modal-footer">Subscribe</p>
+          <div class="div-footer">
+            <input
+              type="email"
+              name="email"
+              class="footer-input-email"
+              placeholder="E-mail"
+            />
 
-              <label for="">
-                <button type="submit" class="btt-footer cursor-pointer">
-                  <span class="text-btt-footer a-footer-text"> Subscribe </span>
-                  <svg width="24px" height="20px">
-                    <use href="./images/modal-icons.svg#icon-Frame-3"></use>
-                  </svg>
-                </button>
-              </label>
-            </div>
+            <button type="submit" class="btt-footer cursor-pointer">
+              Subscribe
+              <svg width="24px" height="20px">
+                <use href="./images/modal-icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

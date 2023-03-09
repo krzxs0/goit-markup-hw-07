@@ -1,0 +1,131 @@
+@media screen and (min-width: 768px) {
+  .container {
+  }
+  .menu {
+    display: none;
+  }
+
+  /* ------------------------- */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-list {
+    display: flex;
+  }
+
+  .box-header-contacs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .links {
+    display: block;
+    padding: 0;
+  }
+  .btt-menu-mobile {
+    display: none;
+  }
+  .tabs-web-studio.current::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    left: 0;
+    border-radius: 2px;
+  }
+  /* ------------------------- */
+  .box-text-hero {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  /* ------------------------ */
+  .box-futures-item {
+    width: 356px;
+  }
+  .box-futures-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .futures-name {
+    height: 40px;
+    width: 264px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: start;
+  }
+  .futures-text {
+    margin-top: 8px;
+    max-width: 356px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+  }
+  /* --------------------------- */
+  .box-our-team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* --------------PORTFOLIO----- */
+  .box-list-portfolio-btt {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* ------------------------------- */
+  .first-list-portfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  /* --------------------------------- */
+  .footer-div-logo {
+    margin-left: auto;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .form-footer {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-div-link {
+    display: block;
+    margin-left: 24px;
+    margin-right: auto;
+  }
+  .btt-footer {
+    margin-bottom: 16px;
+  }
+}
