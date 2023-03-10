@@ -1,12 +1,26 @@
 @media screen and (min-width: 768px) {
   .container {
+    width: 100%;
+    max-width: 766px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
   .menu {
     display: none;
   }
-
+  .container-cust-footer {
+    max-width: 682px;
+  }
   /* ------------------------- */
+  .logo {
+    margin-right: 76px;
+  }
+  .header {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
   .header-mail {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -15,6 +29,7 @@
     color: #434455;
   }
   .header-tel {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -29,12 +44,17 @@
   .header-list {
     display: flex;
   }
-
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
   .box-header-contacs-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 16px 0;
+    padding: 16px 0;
   }
   .links {
     display: block;
@@ -56,6 +76,27 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
+  .hero-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--tags-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      -webkit-image-set(url('../images/Dark-bg@2x.jpg') 2x, url('../images/Dark-bg.jpg')
+            1x, url('../images/Dark-bg@3x.jpg') 3x);
+    height: auto;
+    flex-grow: 1;
+    padding: 112px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 432px;
+  }
+  .hero-section {
+    padding: 112px 0;
+  }
   .links {
     font-family: 'Roboto';
     font-style: normal;
@@ -69,7 +110,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    bottom: -1px;
+    bottom: -144%;
     height: 4px;
     background-color: #404bbf;
     left: 0;
@@ -77,6 +118,7 @@
   }
   /* ------------------------- */
   .box-text-hero {
+    max-width: 496px;
     width: 100%;
     font-style: normal;
     font-weight: 700;
@@ -84,6 +126,7 @@
     line-height: calc(60 / 56);
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 36px;
   }
   /* ------------------------ */
   .box-futures-item {
@@ -108,7 +151,7 @@
   }
   .futures-text {
     margin-top: 8px;
-    max-width: 356px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -129,6 +172,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer-input-email {
+    margin-bottom: 16px;
+    min-width: 264px;
+  }
   /* ------------------------------- */
   .first-list-portfolio {
     display: flex;
@@ -138,12 +185,14 @@
   }
   /* --------------------------------- */
   .footer-div-logo {
-    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
   }
   .container-footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .form-footer {
     display: block;
@@ -160,7 +209,6 @@
   .footer-div-link {
     display: block;
     margin-left: 24px;
-    margin-right: auto;
   }
   .btt-footer {
     margin-bottom: 16px;
