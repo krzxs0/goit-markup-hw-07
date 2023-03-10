@@ -1296,7 +1296,7 @@ ul {
     height: auto;
   }
   .items-list-portfolio {
-    width: 360px;
-    height: 420px;
+    max-width: 260px;
+    max-height: 320px;
   }
 }
