@@ -1041,7 +1041,7 @@ ul {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
-    column-gap: 56px;
+    column-gap: 36px;
   }
   .menu-close {
     background: none;
