@@ -1077,8 +1077,18 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
   }
+  .studio-link {
+    margin-bottom: 40px;
+  }
+  .portfolio-link {
+    margin-bottom: 40px;
+  }
   .mob-menu {
-    margin-bottom: 148px;
+    width: 100%;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .header-mail {
     font-style: normal;
@@ -1088,6 +1098,7 @@ ul {
 
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 48px;
   }
   .header-tel {
     font-style: normal;
@@ -1097,6 +1108,7 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #4d5ae5;
+    margin-bottom: 40px;
   }
   .hero-section {
     background-color: var(--tags-color);
@@ -1111,17 +1123,20 @@ ul {
     background-size: cover;
     height: auto;
     flex-grow: 1;
-    padding: 188px 0;
+    padding: 112px 0;
     max-width: 1440px;
     margin: 0 auto;
   }
-
+  .modal {
+    max-width: 300px;
+  }
   .svg-header-menu {
     stroke: #434455;
   }
   .button-open-menu {
     background: none;
     border: none;
+    padding: 0px;
   }
   .mobile-menu > .container {
     height: 100%;
@@ -1275,6 +1290,12 @@ ul {
   .div-footer {
     display: flex;
     flex-direction: column;
+  }
+  .btt-footer {
+    margin-left: 0;
+  }
+  .section-slogan {
+    margin-bottom: 72px;
   }
   /* PORTFOLIO------------------------------ */
   .box-list-portfolio-btt {

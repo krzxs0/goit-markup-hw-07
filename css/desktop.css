@@ -13,7 +13,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    bottom: -70%;
+    bottom: -98%;
     height: 4px;
     background-color: #404bbf;
     left: 0;
@@ -31,25 +31,25 @@
     margin-right: 76px;
   }
   .header {
+    height: 72px;
     padding-bottom: 0;
     padding-top: 0;
   }
   .header-mail {
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 20);
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
     letter-spacing: 0.02em;
-    color: #434455;
   }
   .header-tel {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: calc(24 / 16);
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 0px;
   }
   .header-container {
     display: flex;
@@ -94,6 +94,7 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+    padding: 24px 0;
   }
   .button-open-menu {
     display: none;
@@ -108,6 +109,9 @@
   }
   .btt-menu-mobile {
     display: none;
+  }
+  .section-slogan {
+    margin-bottom: 48px;
   }
   /* -------------------------------------- */
   .box-wawd-section {
@@ -181,6 +185,18 @@
     flex-direction: row;
   }
   /* ------------------------------------------ */
+  .btt-footer {
+    display: block;
+    margin-left: 24px;
+
+    margin-bottom: 0;
+  }
+  .studio-link {
+    margin-bottom: 0px;
+  }
+  .portfolio-link {
+    margin-bottom: 0px;
+  }
   .footer-div-logo {
     display: flex;
     align-items: flex-start;
@@ -188,13 +204,13 @@
   .footer-input-email {
     display: block;
     margin-left: auto;
-
+    margin-bottom: 0;
     min-width: 264px;
   }
   .form-footer {
     display: flex;
     align-items: flex-start;
-    margin-left: 80px;
+    margin-left: auto;
   }
   .div-footer {
     display: flex;
@@ -206,10 +222,10 @@
     display: block;
     margin-left: 120px;
   }
-  .btt-footer {
-    margin-bottom: 16px;
+  .main-section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
   }
-
   /* FOOTER------------------------------------ */
   .box-list-portfolio-btt {
     display: flex;
@@ -219,6 +235,7 @@
   .first-list-portfolio {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .items-list-portfolio {
     width: 360px;
