@@ -125,6 +125,7 @@
     letter-spacing: 0.02em;
   }
   .customers-links {
+    margin-right: 0;
     width: 168px;
     height: 88px;
   }
